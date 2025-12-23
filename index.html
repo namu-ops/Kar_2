@@ -408,564 +408,89 @@
 </section>
 
         <!-- Раздел "Список песен" -->
-        <section class="songs" id="songs">
-            <div class="container">
-                <h2 class="section-title">Наша коллекция песен</h2>
-                <p class="section-subtitle">Более 50 000 песен на русском и иностранных языках</p>
-               
-                <div class="songs-search">
-                    <input type="text" id="song-search" placeholder="Найти песню по названию или исполнителю...">
-                    <button id="search-btn"><i class="fas fa-search"></i></button>
-                </div>
-               
-                <div class="songs-filter">
-                    <button class="filter-btn active" data-filter="all">Все</button>
-                    <button class="filter-btn" data-filter="russian">Русские</button>
-                    <button class="filter-btn" data-filter="foreign">Зарубежные</button>
-                    <button class="filter-btn" data-filter="pop">Поп</button>
-                    <button class="filter-btn" data-filter="rock">Рок</button>
-                    <button class="filter-btn" data-filter="hiphop">Хип-хоп</button>
-                    <button class="filter-btn" data-filter="retro">Ретро</button>
-                </div>
-               
-                <div class="songs-container">
-                    <div class="songs-list">
-                        <!-- Песни будут добавляться через JavaScript -->
-                        <div class="song-item" data-category="russian pop">
-                            <div class="song-info">
-                                <h4>Полковнику никто не пишет</h4>
-                                <p class="song-artist">Би-2</p>
-                                <span class="song-category">Русский рок</span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                       
-                        <div class="song-item" data-category="foreign pop">
-                            <div class="song-info">
-                                <h4>Bohemian Rhapsody</h4>
-                                <p class="song-artist">Queen</p>
-                                <span class="song-category">Зарубежный рок</span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                       
-                        <div class="song-item" data-category="russian pop">
-                            <div class="song-info">
-                                <h4>Сэра</h4>
-                                <p class="song-artist">Валерий Меладзе</p>
-                                <span class="song-category">Русская поп-музыка</span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                       
-                        <div class="song-item" data-category="foreign hiphop">
-                            <div class="song-info">
-                                <h4>Lose Yourself</h4>
-                                <p class="song-artist">Eminem</p>
-                                <span class="song-category">Зарубежный хип-хоп</span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                       
-                        <div class="song-item" data-category="retro">
-                            <div class="song-info">
-                                <h4>Миллион алых роз</h4>
-                                <p class="song-artist">Алла Пугачева</p>
-                                <span class="song-category">Ретро</span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                       
-                        <div class="song-item" data-category="foreign pop">
-                            <div class="song-info">
-                                <h4>Bad Romance</h4>
-                                <p class="song-artist">Lady Gaga</p>
-                                <span class="song-category">Зарубежная поп-музыка</span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
+<section class="songs" id="songs">
+    <div class="container">
+        <h2 class="section-title">Наша коллекция песен</h2>
+        <p class="section-subtitle">Более 50 000 песен на русском и иностранных языках</p>
+        
+        <div class="songs-search">
+            <input type="text" id="song-search" placeholder="Найти песню по названию или исполнителю...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="songs-filter">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="russian">Русские</button>
+            <button class="filter-btn" data-filter="foreign">Зарубежные</button>
+            <button class="filter-btn" data-filter="pop">Поп</button>
+            <button class="filter-btn" data-filter="rock">Рок</button>
+            <button class="filter-btn" data-filter="hiphop">Хип-хоп</button>
+            <button class="filter-btn" data-filter="retro">Ретро</button>
+            <button class="filter-btn" data-filter="disco">Диско</button>
+            <button class="filter-btn" data-filter="folk">Народные</button>
+        </div>
+        
+        <div class="songs-container">
+            <!-- Песни будут загружены через JavaScript -->
+            <div class="songs-list" id="songs-list">
+                <!-- Динамически загружаемые песни -->
+            </div>
+            
+            <div class="songs-stats">
+                <h3><i class="fas fa-chart-bar"></i> Статистика</h3>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">50,000+</span>
+                        <span class="stat-label">песен в каталоге</span>
                     </div>
-
-                        <div class="song-item" data-category="foreign pop">
-                            <div class="song-info">
-                                <h4>Roar</h4>
-                                <p class="song-artist">Katy Perry</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Counting stars</h4>
-                                <p class="song-artist">OneRepublic</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Shape Of You</h4>
-                                <p class="song-artist">Ed Sheeran</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Perfect</h4>
-                                <p class="song-artist">Ed Sheeran</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Believer</h4>
-                                <p class="song-artist">Imagine Dradons</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Uptown Funk</h4>
-                                <p class="song-artist">Bruno Mars</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>There's Nothing Holdin' Me Back</h4>
-                                <p class="song-artist">Shawn Mendes</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Levitating</h4>
-                                <p class="song-artist">Dua Lipa</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Waka Waka</h4>
-                                <p class="song-artist">Shakira</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Whenever, Wherever</h4>
-                                <p class="song-artist">Shakira</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>7 Rings</h4>
-                                <p class="song-artist">Ariana Grande</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Blinding Lights</h4>
-                                <p class="song-artist">The Weeknd</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Cruel Summer</h4>
-                                <p class="song-artist">Taylor Swift</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Moves Like Jagger</h4>
-                                <p class="song-artist">Maroon 5</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Chandelier</h4>
-                                <p class="song-artist">Sia</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Umbrella</h4>
-                                <p class="song-artist">Rihanna</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Poker Face</h4>
-                                <p class="song-artist">Lady Gaga</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>You're My Heart, You're My Soul</h4>
-                                <p class="song-artist">Modern Talking</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Wannabe</h4>
-                                <p class="song-artist">Spice Girls</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>So What</h4>
-                                <p class="song-artist">P!nk</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Ева</h4>
-                                <p class="song-artist">Винтаж</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>I got love</h4>
-                                <p class="song-artist">Miyagi&Эндшпиль</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Царица</h4>
-                                <p class="song-artist">ANNA ASTI</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>По барам</h4>
-                                <p class="song-artist">ANNA ASTI</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Маршрутка</h4>
-                                <p class="song-artist">IOWA</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Улыбайся</h4>
-                                <p class="song-artist">IOWA</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Голая</h4>
-                                <p class="song-artist">Градусы</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Улыбка</h4>
-                                <p class="song-artist">Pizza</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Сумашедшая</h4>
-                                <p class="song-artist">Алексей Воробьёв</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Угонщица</h4>
-                                <p class="song-artist">Ирина Аллегрова</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Императрица</h4>
-                                <p class="song-artist">Ирина Аллегрова</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Матушка Земля</h4>
-                                <p class="song-artist">Татьяна Куртукова</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Dynamite</h4>
-                                <p class="song-artist">BTS</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Seven</h4>
-                                <p class="song-artist">Jungkook</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Apt.</h4>
-                                <p class="song-artist">Rose&Bruno Mars</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Невеста</h4>
-                                <p class="song-artist">Егор Крид</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Знаешь ли ты</h4>
-                                <p class="song-artist">МакSим</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Выше</h4>
-                                <p class="song-artist">Нюша</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Прованс</h4>
-                                <p class="song-artist">Ёлка</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Спектакль окончен</h4>
-                                <p class="song-artist">Полина Гагарина</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>В самое сердце</h4>
-                                <p class="song-artist">Сергей Лазарев</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Держи</h4>
-                                <p class="song-artist">Дима Билан</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Я эту жизнь тебе отдам</h4>
-                                <p class="song-artist">Филипп Киркоров</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Часики</h4>
-                                <p class="song-artist">Валерия</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Я счастливый</h4>
-                                <p class="song-artist">Григорий Лепс</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Самый лучший день</h4>
-                                <p class="song-artist">Григорий Лепс</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Всё для тебя</h4>
-                                <p class="song-artist">Стас Михайлов</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Владимирский централ</h4>
-                                <p class="song-artist">Михаил Круг</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Аргентина-Ямайка 5:0</h4>
-                                <p class="song-artist">Чайф</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Районы-кварталы</h4>
-                                <p class="song-artist">Звери</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Группа крови</h4>
-                                <p class="song-artist">Кино</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>Кукушка</h4>
-                                <p class="song-artist">Полина Гагарина</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                                            <div class="song-item" data-category="">
-                            <div class="song-info">
-                                <h4>От Волги до Енисея</h4>
-                                <p class="song-artist">ЛЮБЭ</p>
-                                <span class="song-category"></span>
-                            </div>
-                            <button class="song-request-btn">Заказать</button>
-                        </div>
-                   
-                    <div class="songs-stats">
-                        <h3><i class="fas fa-chart-bar"></i> Статистика</h3>
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="stat-number">50,000+</span>
-                                <span class="stat-label">песен в каталоге</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">1,200+</span>
-                                <span class="stat-label">исполнителей</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">15</span>
-                                <span class="stat-label">языков</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">25</span>
-                                <span class="stat-label">жанров</span>
-                            </div>
-                        </div>
-                       
-                        <div class="top-songs">
-                            <h4><i class="fas fa-crown"></i> Топ-5 песен недели</h4>
-                            <ol>
-                                <li>Руки Вверх - 18 мне уже</li>
-                                <li>Michael Jackson - Billie Jean</li>
-                                <li>Ленинград - Экспонат</li>
-                                <li>Bon Jovi - It's My Life</li>
-                                <li>Кино - Группа крови</li>
-                            </ol>
-                        </div>
+                    <div class="stat">
+                        <span class="stat-number">1,200+</span>
+                        <span class="stat-label">исполнителей</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">языков</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25</span>
+                        <span class="stat-label">жанров</span>
                     </div>
                 </div>
-               
-                <div class="song-request-form" id="song-request-form">
-                    <h3>Заказать песню</h3>
-                    <form id="request-form">
-                        <div class="form-group">
-                            <label for="request-song">Название песни *</label>
-                            <input type="text" id="request-song" name="song" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="request-artist">Исполнитель</label>
-                            <input type="text" id="request-artist" name="artist">
-                        </div>
-                        <div class="form-group">
-                            <label for="request-table">Номер столика</label>
-                            <input type="text" id="request-table" name="table">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Отправить заявку</button>
-                        <button type="button" class="btn btn-secondary cancel-request">Отмена</button>
-                    </form>
+                
+                <div class="top-songs">
+                    <h4><i class="fas fa-crown"></i> Топ-5 песен недели</h4>
+                    <ol>
+                        <li>Аргентина-Ямайка 5:0 - Чайф</li>
+                        <li>Bohemian Rhapsody - Queen</li>
+                        <li>Экспонат - Ленинград</li>
+                        <li>Billie Jean - Michael Jackson</li>
+                        <li>Кукушка - Полина Гагарина</li>
+                    </ol>
                 </div>
             </div>
-        </section>
+        </div>
+        
+        <div class="song-request-form" id="song-request-form">
+            <h3>Заказать песню</h3>
+            <form id="request-form">
+                <div class="form-group">
+                    <label for="request-song">Название песни *</label>
+                    <input type="text" id="request-song" name="song" required>
+                </div>
+                <div class="form-group">
+                    <label for="request-artist">Исполнитель</label>
+                    <input type="text" id="request-artist" name="artist">
+                </div>
+                <div class="form-group">
+                    <label for="request-table">Номер столика</label>
+                    <input type="text" id="request-table" name="table">
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                <button type="button" class="btn btn-secondary cancel-request">Отмена</button>
+            </form>
+        </div>
+    </div>
+</section>
 
         <!-- Обновленное меню -->
 <section class="menu-section" id="menu">
