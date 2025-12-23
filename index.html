@@ -542,153 +542,215 @@
             </div>
         </section>
 
-        <!-- Раздел "Меню" -->
-        <section class="menu-section" id="menu">
-            <div class="container">
-                <h2 class="section-title">Наше меню</h2>
-                <p class="section-subtitle">Вкусные коктейли, закуски и десерты</p>
-               
-                <div class="menu-tabs">
-                    <button class="menu-tab active" data-tab="bar">Барная карта</button>
-                    <button class="menu-tab" data-tab="kitchen">Кухня</button>
-                    <button class="menu-tab" data-tab="snacks">Закуски</button>
-                    <button class="menu-tab" data-tab="desserts">Десерты</button>
+        <!-- Обновленное меню -->
+<section class="menu-section" id="menu">
+    <div class="container">
+        <h2 class="section-title">Наше меню</h2>
+        <p class="section-subtitle">Вкусные коктейли, закуски и напитки</p>
+        
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-tab="drinks">Напитки</button>
+            <button class="menu-tab" data-tab="snacks">Закуски</button>
+        </div>
+        
+        <div class="menu-content">
+            <!-- Напитки -->
+            <div class="menu-category active" id="drinks-menu">
+                <h3><i class="fas fa-cocktail"></i> Коктейли</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="mojito.jpg" alt="Мохито" class="menu-item-img">
+                                <h4>Мохито</h4>
+                            </div>
+                            <span class="item-price">550 ₽</span>
+                        </div>
+                        <p class="item-desc">Белый ром, лайм, мята, сахарный сироп, содовая</p>
+                        <span class="item-volume">400 мл</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="blue-lagoon.jpg" alt="Голубая лагуна" class="menu-item-img">
+                                <h4>Голубая лагуна</h4>
+                            </div>
+                            <span class="item-price">600 ₽</span>
+                        </div>
+                        <p class="item-desc">Водка, ликер Blue Curacao, лимонный сок, спрайт</p>
+                        <span class="item-volume">350 мл</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="margarita.jpg" alt="Маргарита" class="menu-item-img">
+                                <h4>Маргарита</h4>
+                            </div>
+                            <span class="item-price">650 ₽</span>
+                        </div>
+                        <p class="item-desc">Текила, ликер Cointreau, лаймовый сок, соленая окантовка</p>
+                        <span class="item-volume">300 мл</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="milkshake.jpg" alt="Молочный коктейль" class="menu-item-img">
+                                <h4>Молочный коктейль</h4>
+                            </div>
+                            <span class="item-price">450 ₽</span>
+                        </div>
+                        <p class="item-desc">Молоко, мороженое, сироп (ваниль/шоколад/клубника)</p>
+                        <span class="item-volume">400 мл</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="lavender.jpg" alt="Лавандовое наслаждение" class="menu-item-img">
+                                <h4>Лавандовое наслаждение</h4>
+                            </div>
+                            <span class="item-price">700 ₽</span>
+                        </div>
+                        <p class="item-desc">Джин, лавандовый сироп, лимонный сок, яичный белок</p>
+                        <span class="item-volume">250 мл</span>
+                    </div>
                 </div>
-               
-                <div class="menu-content">
-                    <!-- Барная карта -->
-                    <div class="menu-category active" id="bar-menu">
-                        <h3><i class="fas fa-cocktail"></i> Коктейли</h3>
-                        <div class="menu-items">
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Московская ночь</h4>
-                                    <span class="item-price">650 ₽</span>
-                                </div>
-                                <p class="item-desc">Водка, ликер Blue Curacao, лимонный сок, тоник</p>
-                                <span class="item-volume">300 мл</span>
+                
+                <h3><i class="fas fa-beer"></i> Другие напитки</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="heineken.jpg" alt="Пиво Хайнекен" class="menu-item-img">
+                                <h4>Пиво Хайнекен</h4>
                             </div>
-                           
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Мохито</h4>
-                                    <span class="item-price">550 ₽</span>
-                                </div>
-                                <p class="item-desc">Белый ром, лайм, мята, сахарный сироп, содовая</p>
-                                <span class="item-volume">400 мл</span>
-                            </div>
-                           
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Пение птиц</h4>
-                                    <span class="item-price">750 ₽</span>
-                                </div>
-                                <p class="item-desc">Джин, ликер St. Germain, сок личи, яичный белок</p>
-                                <span class="item-volume">250 мл</span>
-                            </div>
-                           
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Мелодия лета</h4>
-                                    <span class="item-price">600 ₽</span>
-                                </div>
-                                <p class="item-desc">Текила, клубничное пюре, лаймовый сок, имбирный эль</p>
-                                <span class="item-volume">350 мл</span>
-                            </div>
+                            <span class="item-price">350 ₽</span>
                         </div>
-                       
-                        <h3><i class="fas fa-beer"></i> Пиво</h3>
-                        <div class="menu-items">
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Guinness</h4>
-                                    <span class="item-price">450 ₽</span>
-                                </div>
-                                <p class="item-desc">Ирландский стаут</p>
-                                <span class="item-volume">0.5 л</span>
-                            </div>
-                           
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Hoegaarden</h4>
-                                    <span class="item-price">400 ₽</span>
-                                </div>
-                                <p class="item-desc">Бельгийское белое пиво</p>
-                                <span class="item-volume">0.5 л</span>
-                            </div>
-                        </div>
+                        <p class="item-desc">Светлое лагер, Нидерланды</p>
+                        <span class="item-volume">0.5 л</span>
                     </div>
-                   
-                    <!-- Кухня -->
-                    <div class="menu-category" id="kitchen-menu">
-                        <h3><i class="fas fa-utensils"></i> Основные блюда</h3>
-                        <div class="menu-items">
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Стейк Рибай</h4>
-                                    <span class="item-price">1800 ₽</span>
-                                </div>
-                                <p class="item-desc">Мраморная говядина, овощи-гриль, соус песто</p>
-                                <span class="item-weight">350 г</span>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="cola.jpg" alt="Кола" class="menu-item-img">
+                                <h4>Кола</h4>
                             </div>
-                           
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Лосось на гриле</h4>
-                                    <span class="item-price">1200 ₽</span>
-                                </div>
-                                <p class="item-desc">Филе лосося, лимон, укроп, картофельное пюре</p>
-                                <span class="item-weight">300 г</span>
-                            </div>
+                            <span class="item-price">200 ₽</span>
                         </div>
+                        <p class="item-desc">Coca-Cola</p>
+                        <span class="item-volume">0.33 л</span>
                     </div>
-                   
-                    <!-- Закуски -->
-                    <div class="menu-category" id="snacks-menu">
-                        <h3><i class="fas fa-cheese"></i> Закуски</h3>
-                        <div class="menu-items">
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Сырная тарелка</h4>
-                                    <span class="item-price">950 ₽</span>
-                                </div>
-                                <p class="item-desc">Ассорти из 5 сортов сыра, орехи, мед, крекеры</p>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="water.jpg" alt="Вода BonAqua" class="menu-item-img">
+                                <h4>Вода BonAqua</h4>
                             </div>
-                           
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Карпаччо из говядины</h4>
-                                    <span class="item-price">850 ₽</span>
-                                </div>
-                                <p class="item-desc">Тонко нарезанная говядина, руккола, пармезан, трюфельное масло</p>
-                            </div>
+                            <span class="item-price">150 ₽</span>
                         </div>
-                    </div>
-                   
-                    <!-- Десерты -->
-                    <div class="menu-category" id="desserts-menu">
-                        <h3><i class="fas fa-ice-cream"></i> Десерты</h3>
-                        <div class="menu-items">
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Тирамису</h4>
-                                    <span class="item-price">450 ₽</span>
-                                </div>
-                                <p class="item-desc">Классический итальянский десерт</p>
-                            </div>
-                           
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Шоколадный фондан</h4>
-                                    <span class="item-price">400 ₽</span>
-                                </div>
-                                <p class="item-desc">Теплый шоколадный кекс с жидкой серединкой, ванильное мороженое</p>
-                            </div>
-                        </div>
+                        <p class="item-desc">Питьевая вода газированная/негазированная</p>
+                        <span class="item-volume">0.5 л</span>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <!-- Закуски -->
+            <div class="menu-category" id="snacks-menu">
+                <h3><i class="fas fa-utensils"></i> Закуски</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="canape-shrimp.jpg" alt="Канапе с креветками" class="menu-item-img">
+                                <h4>Канапе с креветками</h4>
+                            </div>
+                            <span class="item-price">850 ₽</span>
+                        </div>
+                        <p class="item-desc">Креветки тигровые, авокадо, соус манго-чили</p>
+                        <span class="item-weight">6 шт</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="tartlets-ham.jpg" alt="Тарталетки с ветчиной" class="menu-item-img">
+                                <h4>Тарталетки с ветчиной</h4>
+                            </div>
+                            <span class="item-price">750 ₽</span>
+                        </div>
+                        <p class="item-desc">Ветчина пармская, сливочный сыр, зелень</p>
+                        <span class="item-weight">8 шт</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="avocado-shrimp.jpg" alt="Бутерброды с авокадо и креветками" class="menu-item-img">
+                                <h4>Бутерброды с авокадо и креветками</h4>
+                            </div>
+                            <span class="item-price">900 ₽</span>
+                        </div>
+                        <p class="item-desc">Авокадо, креветки, цельнозерновой хлеб, лимон</p>
+                        <span class="item-weight">4 шт</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="cheese-plate.jpg" alt="Сырная тарелка" class="menu-item-img">
+                                <h4>Сырная тарелка</h4>
+                            </div>
+                            <span class="item-price">1200 ₽</span>
+                        </div>
+                        <p class="item-desc">Ассорти из 5 сортов сыра, орехи, мед, крекеры</p>
+                        <span class="item-weight">400 г</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="cheesecake.jpg" alt="Чизкейк Нью-Йорк" class="menu-item-img">
+                                <h4>Чизкейк Нью-Йорк</h4>
+                            </div>
+                            <span class="item-price">450 ₽</span>
+                        </div>
+                        <p class="item-desc">Классический чизкейк с ягодным соусом</p>
+                        <span class="item-weight">150 г</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="sweet-potato.jpg" alt="Картофель фри из батата" class="menu-item-img">
+                                <h4>Картофель фри из батата</h4>
+                            </div>
+                            <span class="item-price">550 ₽</span>
+                        </div>
+                        <p class="item-desc">Сладкий картофель с трюфельным соусом</p>
+                        <span class="item-weight">250 г</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <div class="item-title-with-image">
+                                <img src="creme-brulee.jpg" alt="Крем-брюле" class="menu-item-img">
+                                <h4>Крем-брюле</h4>
+                            </div>
+                            <span class="item-price">400 ₽</span>
+                        </div>
+                        <p class="item-desc">Ванильный крем с карамельной корочкой</p>
+                        <span class="item-weight">120 г</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                    </section>
 
         <!-- Раздел "Мероприятия" -->
         <section class="events" id="events">
